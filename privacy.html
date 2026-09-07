@@ -34,10 +34,21 @@
     padding: 40px 24px 80px;
   }
   h2 { font-size: 18px; margin-top: 36px; }
+  h3 { font-size: 15px; margin-top: 24px; margin-bottom: 4px; }
   p, li { color: #333; }
+  ul { padding-left: 20px; }
   .back { display: inline-block; margin-bottom: 24px; color: var(--red); text-decoration: none; font-weight: 500; }
   .back:hover { text-decoration: underline; }
   .updated { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .lead { font-size: 15px; }
+  .callout {
+    background: #fff5f5;
+    border: 1px solid #ffd9d9;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
   footer {
     text-align: center;
     padding: 24px;
@@ -56,7 +67,23 @@
 
 <main>
   <a class="back" href="index.html">← Zurück</a>
-  <p class="updated">Stand: 23. August 2026</p>
+  <p class="updated">Stand: 7. September 2026</p>
+
+  <p class="lead">
+    PulseCaller ist so gebaut, dass deine Daten dein iPhone gar nicht erst verlassen. Es gibt
+    keinen Server des Anbieters, kein Nutzerkonto, kein Tracking und keine Werbung. Die folgende
+    Erklärung beschreibt trotzdem im Detail, welche Daten die App auf deinem Gerät verarbeitet,
+    wozu, und in welchen wenigen, ausdrücklich von dir aktivierten Fällen Daten über Apples
+    iCloud-Dienst übertragen werden.
+  </p>
+
+  <div class="callout">
+    <strong>Kurzfassung:</strong> Alles bleibt standardmäßig lokal auf deinem iPhone (in Apple
+    Health und den lokalen App-Einstellungen). Der Anbieter hat keinerlei Zugriff auf deine
+    Gesundheits- oder Trainingsdaten. Nur wenn du „Teilen mit Freunden" oder das Teilen eines
+    Stimmpakets aktivierst, werden ausgewählte Daten über deinen privaten iCloud-Account an
+    Personen übertragen, die du selbst einlädst.
+  </div>
 
   <h2>1. Verantwortlicher</h2>
   <p>
@@ -66,52 +93,233 @@
     E-Mail: <a href="mailto:tobias.erkel@gmail.com">tobias.erkel@gmail.com</a>
   </p>
 
-  <h2>2. Welche Daten werden verarbeitet</h2>
+  <h2>2. Hosting der Support-Website</h2>
   <p>
-    PulseCaller verarbeitet deine Herzfrequenzdaten (gemessen über AirPods Pro oder andere mit Apple Health
-    synchronisierte Geräte) sowie deine in der App festgelegten Trainingseinstellungen (Herzfrequenzgrenzen,
-    Warm-up-Dauer, Ansage-Einstellungen). Zusätzlich speichert die App eine lokale Zusammenfassung
-    abgeschlossener Trainingseinheiten (Datum, Dauer, Durchschnitts-, Min-/Max-Herzfrequenz, Zeit in der Zielzone).
+    Diese Website (Support-Seite, Impressum, Datenschutzerklärung) wird als statische Seite bei
+    <strong>GitHub Pages</strong> gehostet, einem Dienst der GitHub, Inc., 88 Colin P. Kelly Jr.
+    Street, San Francisco, CA 94107, USA (Teil von Microsoft). Beim Aufruf der Seiten überträgt dein
+    Browser technisch notwendige Daten an die Server von GitHub, darunter deine IP-Adresse, Datum
+    und Uhrzeit des Zugriffs, die aufgerufene Seite, den zuvor besuchten Verweis (Referrer) sowie
+    Angaben zu Browser und Betriebssystem. GitHub verarbeitet diese Server-Logdaten zur Auslieferung
+    der Seite und zur Gewährleistung von Sicherheit und Stabilität. Rechtsgrundlage ist Art. 6
+    Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren Betrieb der Website).
+  </p>
+  <p>
+    Die Website setzt <strong>keine Cookies</strong>, bindet keine Schriftarten, Karten, Videos oder
+    Social-Media-Elemente von Dritten ein und nutzt keine Analyse- oder Tracking-Dienste. Ein
+    Kontaktformular gibt es nicht; eine Kontaktaufnahme per E-Mail erfolgt über den angegebenen
+    Mailto-Link.
+  </p>
+  <p>
+    Da die Server von GitHub auch in den USA stehen, kann eine Übermittlung in die USA stattfinden.
+    GitHub stützt sich hierfür auf die EU-Standardvertragsklauseln; GitHub, Inc. ist zudem unter dem
+    EU-US Data Privacy Framework zertifiziert. Weitere Informationen:
+    <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
   </p>
 
-  <h2>3. Zweck der Verarbeitung</h2>
+  <h2>3. Grundprinzip: lokale Verarbeitung</h2>
   <p>
-    Die Daten werden ausschließlich verwendet, um dir deine Herzfrequenz live anzuzeigen, dich per Sprachansage
-    zu informieren, wenn du deine Zielzone verlässt, und dir deinen Trainingsverlauf anzuzeigen.
+    Die App überträgt deine Trainings- und Gesundheitsdaten <strong>nicht</strong> an Server des
+    Anbieters. Es gibt:
+  </p>
+  <ul>
+    <li>kein Nutzerkonto und keine Registrierung,</li>
+    <li>keine Analyse-, Statistik- oder Tracking-Dienste (kein Google Analytics, Firebase,
+        Facebook-SDK o. ä.),</li>
+    <li>keine Werbung und kein Weiterverkauf von Daten,</li>
+    <li>keine Weitergabe an Dritte – abgesehen von den unten unter Punkt 12 und 13 beschriebenen,
+        ausdrücklich von dir eingeschalteten Teilen-Funktionen über Apples iCloud.</li>
+  </ul>
+  <p>
+    Rechtsgrundlage für die lokale Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der
+    von dir angeforderten App-Funktionen) bzw., soweit es sich um Gesundheitsdaten handelt und du
+    die jeweilige Funktion aktivierst, deine Einwilligung nach Art. 9 Abs. 2 lit. a DSGVO. Du
+    kannst jede optionale Funktion in der App wieder abschalten; das gilt für die Zukunft.
   </p>
 
-  <h2>4. Speicherort und Weitergabe</h2>
+  <h2>4. Herzfrequenz und Trainingsdaten (Apple Health / HealthKit)</h2>
   <p>
-    Alle Daten verbleiben ausschließlich lokal auf deinem iPhone (in Apple Health bzw. in den lokalen
-    App-Einstellungen). Es findet <strong>keine Übertragung an Server</strong> des Anbieters oder Dritter statt,
-    keine Analyse-/Tracking-Dienste, keine Werbung und keine Weitergabe an Dritte. Der Anbieter selbst hat
-    keinerlei Einblick oder Zugriff auf deine Gesundheitsdaten.
+    Die Kernfunktion der App ist die Live-Anzeige deiner Herzfrequenz während des Trainings. Dazu
+    startet die App eine Trainings-Einheit in Apple Health, damit die AirPods bzw. ein gekoppeltes
+    Gerät die Herzfrequenz liefern. Nach deiner Freigabe im HealthKit-Dialog verarbeitet die App:
+  </p>
+  <ul>
+    <li><strong>lesend:</strong> Herzfrequenz, Trainings-/Workout-Einträge, aktiver Energieumsatz
+        (Kalorien) sowie – falls von einer Apple Watch vorhanden – der Wert „Cardio-Fitness"
+        (VO₂max), um ihn im Rechner anzuzeigen;</li>
+    <li><strong>schreibend:</strong> die von dir absolvierte Trainingseinheit wird als Workout in
+        Apple Health gesichert.</li>
+  </ul>
+  <p>
+    Diese Daten werden ausschließlich auf dem Gerät verarbeitet, um dir die Herzfrequenz live
+    anzuzeigen, dich per Sprachansage, Ton oder Vibration zu informieren, wenn du deine Zielzone
+    verlässt, und um dir nach dem Training eine Auswertung zu zeigen.
   </p>
 
-  <h2>5. HealthKit</h2>
+  <h2>5. Standort und Bewegung</h2>
   <p>
-    Die App hält sich an Apples Richtlinien für die Nutzung von HealthKit-Daten: Gesundheitsdaten werden nicht
-    zu Werbezwecken verwendet, nicht verkauft und nicht an Datenhändler weitergegeben.
+    Wenn du die Distanzaufzeichnung nutzt, greift die App während einer laufenden Einheit auf
+    deinen <strong>Standort</strong> (GPS) zu, um die zurückgelegte Strecke und das Tempo zu
+    berechnen, sowie – als Rückfalloption ohne GPS-Signal bei Laufen und Gehen – auf die
+    <strong>Bewegungs- und Fitnessdaten</strong> deines iPhones (Schrittzähler). Standortdaten
+    werden nur lokal für die aktuelle Einheit verwendet, in der lokalen Trainingszusammenfassung
+    als Streckenverlauf gespeichert und nirgendwohin übertragen. Über „GPX exportieren" kannst du
+    den Streckenverlauf einer Einheit selbst als Datei ausgeben und weitergeben – das passiert nur
+    auf deine ausdrückliche Aktion hin.
   </p>
 
-  <h2>6. Speicherdauer und Löschung</h2>
+  <h2>6. Trainingsverlauf und App-Einstellungen</h2>
   <p>
-    Lokale App-Einstellungen und der Trainingsverlauf werden beim Löschen der App vollständig entfernt. Einzelne
-    Verlaufseinträge kannst du jederzeit direkt in der App löschen. Gesundheitsdaten in Apple Health kannst du
-    zusätzlich in der Health-App verwalten oder löschen.
+    Die App speichert lokal auf dem Gerät eine Zusammenfassung abgeschlossener Einheiten (u. a.
+    Datum, Uhrzeit, Dauer, Sportart, Durchschnitts-, Minimal- und Maximal-Herzfrequenz, Zeit in
+    der Zielzone, Distanz, Kalorien, Höhenmeter, ein Herzfrequenzverlauf, optionale Notizen und
+    optionale Fotos) sowie deine Einstellungen (Herzfrequenzgrenzen, Warm-up-Dauer,
+    Ansage-Einstellungen, Sprache, Trainingspläne, Intervall-Vorlagen). Fotos, die du einer
+    Einheit oder deinem Profil hinzufügst, werden verkleinert lokal im App-Speicher abgelegt.
   </p>
 
-  <h2>7. Deine Rechte</h2>
+  <h2>7. Zyklusdaten (optional)</h2>
   <p>
-    Nach der Datenschutz-Grundverordnung (DSGVO) hast du das Recht auf Auskunft, Berichtigung, Löschung und
-    Einschränkung der Verarbeitung deiner Daten. Da alle Daten lokal auf deinem Gerät verbleiben, kannst du diese
-    Rechte direkt selbst über die App bzw. die Health-App wahrnehmen. Bei Fragen erreichst du mich unter der oben
-    genannten E-Mail-Adresse.
+    Aktivierst du die Zyklusfunktion, verarbeitet die App die von dir eingegebenen Angaben – etwa
+    den ersten Tag deiner letzten Periode, durchschnittliche Zyklus- und Periodendauer, hormonelle
+    Verhütung sowie typische Beschwerden – um dir eine <em>geschätzte</em> Zyklusphase und einen
+    Tagesform-Wert anzuzeigen. Zusätzlich kannst du eine <strong>rein lesende</strong> Synchronisierung
+    mit Apple Health einschalten; dann liest die App deine dort hinterlegten Menstruations- bzw.
+    Periodeneinträge, um die Schätzung zu verbessern. Die App schreibt selbst keine Zyklusdaten
+    nach Apple Health.
+  </p>
+  <p>
+    Zyklusdaten sind besonders sensibel (Art. 9 DSGVO). Sie werden ausschließlich lokal auf deinem
+    iPhone gespeichert, nicht an Server übertragen, nicht über iCloud synchronisiert und nicht über
+    den Freunde-Tab geteilt. Die Funktion ist standardmäßig aus. Du kannst alle Zyklusdaten
+    jederzeit unter „Mehr → Zyklus & Training" mit einem Tippen vollständig löschen. Die geschätzte
+    Phase ist keine Verhütungs- oder Familienplanungshilfe.
   </p>
 
-  <h2>8. Kontakt</h2>
+  <h2>8. Körpergewicht und Ernährung (optional)</h2>
   <p>
-    Bei Fragen zum Datenschutz wende dich an: <a href="mailto:tobias.erkel@gmail.com">tobias.erkel@gmail.com</a>
+    Im Ernährungsbereich kannst du freiwillig dein Körpergewicht und deine Ernährungsform angeben,
+    damit die Fueling-Hinweise (Kohlenhydrate, Protein, Flüssigkeit rund ums Training) auf dich
+    zugeschnitten sind. Optional kannst du das Körpergewicht stattdessen <strong>rein lesend</strong>
+    aus Apple Health beziehen. Diese Angaben werden ausschließlich lokal gespeichert, nicht über
+    iCloud synchronisiert und nicht weitergegeben. Du kannst sie jederzeit unter „Mehr → Ernährung"
+    vollständig löschen.
+  </p>
+
+  <h2>9. Meditation und Achtsamkeit (optional)</h2>
+  <p>
+    Meditations- und Atemübungen werden mit einem eigenen, lokalen Protokoll (Datum, Dauer,
+    optional durchschnittliche Herzfrequenz) festgehalten. Nur wenn du es ausdrücklich aktivierst,
+    schreibt die App eine <strong>Achtsamkeits-Einheit</strong> zusätzlich als Eintrag nach Apple
+    Health. Für die optionale Live-Puls-Anzeige während einer Atemübung startet die App eine
+    separate Achtsamkeits-Einheit, die von der Trainingsaufzeichnung getrennt ist.
+  </p>
+
+  <h2>10. VO₂max-Test (optional)</h2>
+  <p>
+    Führst du den geführten 12-Minuten-Test (Cooper) durch, wird das Ergebnis als geschätzter
+    VO₂max-Wert berechnet und lokal gespeichert. Ein Schreiben dieses Werts nach Apple Health
+    erfolgt nur, wenn du im Ergebnis-Bildschirm ausdrücklich darauf tippst.
+  </p>
+
+  <h2>11. Mikrofon, Kamera, Fotos (optional)</h2>
+  <p>
+    Nimmst du unter „Einstellungen → Sprach-Coaching → Eigene Stimmpakete" eigene Ansagen auf,
+    greift die App auf das <strong>Mikrofon</strong> zu und speichert die Aufnahmen als Tondateien
+    ausschließlich lokal. Es findet keine Spracherkennung und keine Übertragung statt. Für ein Foto
+    zu einer Trainingseinheit oder für dein Profil greift die App auf deine <strong>Kamera</strong>
+    bzw. Fotoauswahl zu; die Bilder bleiben lokal.
+  </p>
+
+  <h2>12. Teilen mit Freunden (optional)</h2>
+  <p>
+    Aktivierst du im Freunde-Tab freiwillig das Teilen, werden ausgewählte Trainingsdaten (Datum,
+    Dauer, Sportart, Ø-Herzfrequenz, Distanz, Zeit in der Zielzone) sowie dein in der App
+    eingegebener Name und – falls vorhanden – dein Profilfoto über deinen <strong>privaten
+    iCloud-Account</strong> (Apples CloudKit-Dienst) mit den Personen geteilt, die du dafür
+    ausdrücklich einlädst. Ohne deine Einladung sieht niemand diese Daten. Zyklus-, Ernährungs-,
+    Meditations- und Gesundheits-Rohdaten werden <strong>nie</strong> geteilt. Die Funktion ist
+    standardmäßig deaktiviert, erfordert eine aktive Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und
+    kann jederzeit wieder ausgeschaltet werden. Entfernst du eine Person oder schaltest das Teilen
+    ab, endet ihr Zugriff. Für die Übertragung gelten zusätzlich
+    <a href="https://www.apple.com/legal/privacy/de-ww/">Apples Datenschutzbestimmungen</a> für
+    iCloud.
+  </p>
+
+  <h2>13. Stimmpakete mit Freunden teilen (optional)</h2>
+  <p>
+    Teilst du ein selbst aufgenommenes Stimmpaket ausdrücklich mit einer bestimmten Person, werden
+    die Tonaufnahmen und der Paketname über deinen privaten iCloud-Account an genau diese Person
+    übertragen. Das ist unabhängig vom Teilen von Trainings und standardmäßig aus. „Teilen beenden"
+    stoppt neue Downloads; wer das Paket bereits geladen hat, behält die Datei lokal.
+  </p>
+
+  <h2>14. Käufe (PulseCaller Pro)</h2>
+  <p>
+    Käufe (Jahres-Abo oder Einmalkauf) werden vollständig über Apple abgewickelt. Der Anbieter
+    erhält <strong>keine</strong> Zahlungsdaten (keine Karten- oder Kontodaten, keinen Namen, keine
+    Adresse), sondern von Apple nur anonymisierte, aggregierte Verkaufsübersichten. Ob und wie
+    lange ein Kauf oder Testzeitraum aktiv ist, wird über Apples StoreKit auf dem Gerät geprüft.
+    Der lokale 7-Tage-Testzeitraum wird nur als Datum auf deinem Gerät gespeichert. Für Käufe
+    gelten
+    <a href="https://www.apple.com/legal/internet-services/itunes/">Apples Bedingungen</a>.
+  </p>
+
+  <h2>15. Nutzung von HealthKit</h2>
+  <p>
+    Die App hält sich an Apples Richtlinien für HealthKit: Gesundheitsdaten werden nicht zu
+    Werbezwecken verwendet, nicht verkauft und nicht an Datenhändler weitergegeben. Über HealthKit
+    gelesene Daten werden nur für die in dieser Erklärung genannten Funktionen verwendet.
+  </p>
+
+  <h2>16. Diagnosedaten von Apple</h2>
+  <p>
+    Wenn du in den iOS-Einstellungen unter „Datenschutz &amp; Sicherheit → Analyse &amp;
+    Verbesserungen" das Teilen von Diagnosedaten mit App-Entwicklern aktiviert hast, kann Apple dem
+    Anbieter anonymisierte Absturz- und Leistungsberichte zur Verfügung stellen. Diese enthalten
+    keine Gesundheitsdaten und keine Angaben, mit denen du identifiziert werden kannst. Du kannst
+    das in den iOS-Einstellungen abschalten.
+  </p>
+
+  <h2>17. Speicherdauer und Löschung</h2>
+  <p>
+    Lokale Einstellungen, der Trainingsverlauf, Zyklus-, Ernährungs-, Meditations- und
+    Stimmpaket-Daten sowie Fotos bleiben so lange auf dem Gerät, bis du sie löschst oder die App
+    entfernst. Beim Löschen der App werden alle lokal gespeicherten Daten entfernt. Einzelne
+    Verlaufseinträge, Zyklus-, Ernährungs- und Stimmpaket-Daten kannst du jederzeit direkt in der
+    App löschen. In Apple Health gespeicherte Daten verwaltest oder löschst du zusätzlich in der
+    Health-App. Über iCloud geteilte Daten widerrufst du, indem du das Teilen deaktivierst und
+    Personen entfernst.
+  </p>
+
+  <h2>18. Kinder</h2>
+  <p>
+    Die App richtet sich an Erwachsene und ist nicht für Kinder bestimmt. Es werden nicht wissentlich
+    Daten von Kindern verarbeitet.
+  </p>
+
+  <h2>19. Deine Rechte</h2>
+  <p>
+    Nach der DSGVO hast du das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung
+    (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und
+    Widerspruch (Art. 21) sowie das Recht, eine erteilte Einwilligung jederzeit mit Wirkung für die
+    Zukunft zu widerrufen. Da die Daten lokal auf deinem Gerät liegen und der Anbieter keinen
+    Zugriff darauf hat, nimmst du diese Rechte größtenteils direkt über die App und die Health-App
+    wahr. Bei Fragen erreichst du mich unter der oben genannten E-Mail-Adresse. Dir steht außerdem
+    ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu (für Hessen: Der Hessische
+    Beauftragte für Datenschutz und Informationsfreiheit).
+  </p>
+
+  <h2>20. Änderungen dieser Erklärung</h2>
+  <p>
+    Bei neuen Funktionen kann diese Erklärung angepasst werden. Die jeweils aktuelle Fassung ist
+    unter dieser Adresse abrufbar; das Datum oben zeigt den Stand.
+  </p>
+
+  <h2>21. Kontakt</h2>
+  <p>
+    Bei Fragen zum Datenschutz wende dich an:
+    <a href="mailto:tobias.erkel@gmail.com">tobias.erkel@gmail.com</a>
   </p>
 </main>
 
